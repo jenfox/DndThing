@@ -1,5 +1,6 @@
 import { Alignment, AttributeTypes } from './characterUtil';
 import { Attribute } from './attribute';
+import { Skill } from './skill';
 
 
 
@@ -15,4 +16,6 @@ export class Character {
     experiencePoints: number;
     // stats
     attributes: Attribute[];
+    // skills
+    skills: Skill[];
 }
