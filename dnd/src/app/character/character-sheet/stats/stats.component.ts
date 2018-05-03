@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Attribute } from '../../attribute';
+import { Attribute } from '@angular/compiler';
 
 @Component({
   selector: 'app-stats',

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Alignment } from '../../characterUtil';
+import { Component, OnInit, Input } from '@angular/core';
+import { Character } from '../../models/character';
 
 @Component({
   selector: 'app-info',
@@ -8,14 +8,7 @@ import { Alignment } from '../../characterUtil';
 })
 export class InfoComponent implements OnInit {
 
-  name = 'Your Excellence';
-  class = 'Wizard';
-  level = 6;
-  background = 'Sage';
-  race = 'tiefling';
-  alignment = Alignment.ChaoticNeutral;
-  exp = 150;
-  playerName = 'Jen';
+  @Input() character: Character;
 
   constructor() { }
 

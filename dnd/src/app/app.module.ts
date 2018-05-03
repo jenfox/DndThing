@@ -15,6 +15,7 @@ import { StatusComponent } from './character/character-sheet/status/status.compo
 import { PersonalityComponent } from './character/character-sheet/personality/personality.component';
 import { CharacterSheetComponent } from './character/character-sheet/character-sheet.component';
 import { InfoComponent } from './character/character-sheet/info/info.component';
+import { GetCharacterService } from './character/services/get-character.service';
 
 
 @NgModule({
@@ -36,7 +37,7 @@ import { InfoComponent } from './character/character-sheet/info/info.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [GetCharacterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
