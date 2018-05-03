@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Attribute } from '@angular/compiler';
+import { Attribute } from '../../models/attribute';
 
 @Component({
   selector: 'app-saving-throws',
