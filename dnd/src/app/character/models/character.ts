@@ -18,4 +18,6 @@ export class Character {
     attributes: Attribute[];
     // skills
     skills: Skill[];
+    // languages and other proficiencies
+    languages: string[];
 }
