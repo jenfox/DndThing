@@ -1,5 +1,36 @@
 <div class="border">
-<p>
-  personality works!
-</p>
+  <div class="container">
+      <div class="row border">
+        <h6 class="sm">Personality Traits</h6>
+        <div class="col-sm">
+          <p *ngFor="let trait of character.personalityTraits">
+            {{trait}}
+          </p>
+        </div>
+      </div>
+      <div class="row border">
+        <h6 class="sm">Ideals</h6>
+        <div class="col-sm">
+          <p *ngFor="let ideal of character.ideals">
+              {{ideal}}
+          </p>
+        </div>
+      </div>
+      <div class="row border">
+        <h6 class="sm">Bonds</h6>
+        <div class="col-sm">
+          <p *ngFor="let bond of character.bonds">
+              {{bond}}
+          </p>
+        </div>
+      </div>
+      <div class="rowborder">
+        <h6 class="sm">Flaws</h6>
+        <div class="col-sm">
+          <p *ngFor="let flaw of character.flaws">
+              {{flaw}}
+          </p>
+        </div>
+      </div>
+    </div>
 </div>

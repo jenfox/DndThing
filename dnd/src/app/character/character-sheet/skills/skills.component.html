@@ -1,10 +1,10 @@
 <div class="border">
+    <h6>Skills</h6>
     <ul class="list-group">
         <li class="list-group-item"
         *ngFor = "let skill of skills">
         <span
-        [ngClass]="{'badge badge-primary badge-pill': skill.selected}"
-        >
+        [ngClass]="{'badge badge-primary badge-pill': skill.selected, small: true}">
         {{skill.type}}
         +{{skill.value}}
         </span>

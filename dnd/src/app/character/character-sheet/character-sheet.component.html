@@ -7,19 +7,20 @@
   <div class="row">
     <div class="col-2">
       <app-stats [attributes]= "character.attributes"></app-stats>
+      <app-languages [languages]="character.languages"></app-languages>
     </div>
     <div class="col-3">
       <app-saving-throws [savingThrows]="character.attributes"></app-saving-throws>
       <app-skills [skills]="character.skills"></app-skills>
-      <app-languages></app-languages>
     </div>
     <div class="col-3">
-      <app-status></app-status>
-      <app-attacks></app-attacks>
+      <app-status [character] = "character"></app-status>
+      <app-attacks [attacks]="character.attacks"></app-attacks>
+      <app-equipment [equipment]="character.equipment"></app-equipment>
     </div>
     <div class="col-4">
-      <app-personality></app-personality>
-      <app-features></app-features>
+      <app-personality [character]="character"></app-personality>
+      <app-features [features]="character.featuresAndTraits"></app-features>
     </div>
   </div>
 </div>

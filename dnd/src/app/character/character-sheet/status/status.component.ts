@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Character } from '../../models/character';
 
 @Component({
   selector: 'app-status',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./status.component.css']
 })
 export class StatusComponent implements OnInit {
+
+  @Input() character: Character;
 
   constructor() { }
 
