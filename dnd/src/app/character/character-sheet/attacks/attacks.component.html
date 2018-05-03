@@ -1,5 +1,16 @@
 <div class="border">
-<p>
-  attacks works!
-</p>
+  <p class="small">Attacks & Spellcasting</p>
+    <div class="container">
+        <div class="row border" *ngFor="let attack of attacks">
+          <div class="col-sm">
+            {{attack.name}}
+          </div>
+          <div class="col-sm">
+            {{attack.attackBonus}}
+          </div>
+          <div class="col-sm">
+            {{attack.damageType}}
+          </div>
+        </div>
+      </div>
 </div>

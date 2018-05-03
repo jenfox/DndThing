@@ -1,11 +1,10 @@
 <div class="border">
-  <p>Saving Throws</p>
+  <h6>Saving Throws</h6>
 <ul class="list-group">
     <li class="list-group-item"
       *ngFor = "let savingThrow of savingThrows">
       <span
-      [ngClass]="{'badge badge-primary badge-pill': savingThrow.selected}"
-      >
+      [ngClass]="{'badge badge-primary badge-pill': savingThrow.selected, small:true}">
       {{savingThrow.type}}
       +{{savingThrow.modifier}}
     </span>

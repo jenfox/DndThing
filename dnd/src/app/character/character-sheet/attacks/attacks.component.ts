@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Weapon } from '../../models/weapon';
 
 @Component({
   selector: 'app-attacks',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./attacks.component.css']
 })
 export class AttacksComponent implements OnInit {
+
+  @Input() attacks: Weapon[];
 
   constructor() { }
 
