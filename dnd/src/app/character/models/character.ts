@@ -15,8 +15,12 @@ export class Character {
     race: string;
     alignment: Alignment;
     experiencePoints: number;
+    //Inspiration
+    inspiration: boolean;
     // stats
     attributes: Attribute[];
+    //Proficiency Bonus
+    proficiency: number;
     // skills
     skills: Skill[];
     // languages and other proficiencies
@@ -43,4 +47,5 @@ export class Character {
     flaws: string[];
     // features & traits
     featuresAndTraits: string[];
+    
 }
