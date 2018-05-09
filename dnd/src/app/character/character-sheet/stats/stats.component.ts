@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Attribute } from '../../models/attribute';
+import { Abilities } from '../../models/abilities';
 
 @Component({
   selector: 'app-stats',
@@ -8,7 +8,7 @@ import { Attribute } from '../../models/attribute';
 })
 export class StatsComponent implements OnInit {
 
-  @Input() attributes: Attribute[];
+  @Input() abilities: Abilities[];
 
   constructor() {
   }

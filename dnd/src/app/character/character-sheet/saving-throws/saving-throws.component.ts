@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Attribute } from '../../models/attribute';
+import { Abilities } from '../../models/abilities';
 
 @Component({
   selector: 'app-saving-throws',
@@ -8,7 +8,7 @@ import { Attribute } from '../../models/attribute';
 })
 export class SavingThrowsComponent implements OnInit {
 
-  @Input() savingThrows: Attribute[];
+  @Input() savingThrows: Abilities[];
 
   constructor() { }
 
