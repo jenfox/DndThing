@@ -51,28 +51,28 @@ export class GetCharacterService {
 
   populateSkills() {
     this.character.skills = [];
-    this.character.skills.push(new Skill(Skills.Acrobatics, 2));
-    this.character.skills.push(new Skill(Skills.AnimalHandling, 2));
-    this.character.skills.push(new Skill(Skills.Arcana, 7));
-    this.character.skills[2].selected = true;
-    this.character.skills.push(new Skill(Skills.Athletics, 1));
-    this.character.skills.push(new Skill(Skills.Deception, 4));
-    this.character.skills.push(new Skill(Skills.History, 7));
+    this.character.skills.push(new Skill(Skills.Acrobatics, 2, AttributeTypes.Dexterity));
+    this.character.skills.push(new Skill(Skills.AnimalHandling, 2, AttributeTypes.Wisdom));
+    this.character.skills.push(new Skill(Skills.Arcana, 7, AttributeTypes.Intelligence, true));
+    // this.character.skills[2].selected = true;
+    this.character.skills.push(new Skill(Skills.Athletics, 1, AttributeTypes.Strength));
+    this.character.skills.push(new Skill(Skills.Deception, 4, AttributeTypes.Charisma));
+    this.character.skills.push(new Skill(Skills.History, 7, AttributeTypes.Intelligence));
     this.character.skills[5].selected = true;
-    this.character.skills.push(new Skill(Skills.Insight, 5));
+    this.character.skills.push(new Skill(Skills.Insight, 5, AttributeTypes.Wisdom));
     this.character.skills[6].selected = true;
-    this.character.skills.push(new Skill(Skills.Intimidation, 4));
-    this.character.skills.push(new Skill(Skills.Investigation, 7));
+    this.character.skills.push(new Skill(Skills.Intimidation, 4, AttributeTypes.Charisma));
+    this.character.skills.push(new Skill(Skills.Investigation, 7, AttributeTypes.Intelligence));
     this.character.skills[8].selected = true;
-    this.character.skills.push(new Skill(Skills.Medicine, 2));
-    this.character.skills.push(new Skill(Skills.Nature, 4));
-    this.character.skills.push(new Skill(Skills.Perception, 2));
-    this.character.skills.push(new Skill(Skills.Performance, 4));
-    this.character.skills.push(new Skill(Skills.Persuasion, 4));
-    this.character.skills.push(new Skill(Skills.Religion, 4));
-    this.character.skills.push(new Skill(Skills.SlightOfHand, 2));
-    this.character.skills.push(new Skill(Skills.Stealth, 2));
-    this.character.skills.push(new Skill(Skills.Survival, 2));
+    this.character.skills.push(new Skill(Skills.Medicine, 2, AttributeTypes.Wisdom));
+    this.character.skills.push(new Skill(Skills.Nature, 4, AttributeTypes.Intelligence));
+    this.character.skills.push(new Skill(Skills.Perception, 2, AttributeTypes.Wisdom));
+    this.character.skills.push(new Skill(Skills.Performance, 4, AttributeTypes.Charisma));
+    this.character.skills.push(new Skill(Skills.Persuasion, 4, AttributeTypes.Charisma));
+    this.character.skills.push(new Skill(Skills.Religion, 4, AttributeTypes.Intelligence));
+    this.character.skills.push(new Skill(Skills.SlightOfHand, 2, AttributeTypes.Dexterity));
+    this.character.skills.push(new Skill(Skills.Stealth, 2, AttributeTypes.Dexterity));
+    this.character.skills.push(new Skill(Skills.Survival, 2, AttributeTypes.Wisdom));
   }
 
   populateLanguages() {
