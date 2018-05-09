@@ -1,15 +1,16 @@
-import { AttributeTypes } from './characterUtil';
+import { Ability } from './characterUtil';
 
-export class Attribute {
-    type: AttributeTypes;
+export class Abilities {
+    type: Ability;
     value: number;
     modifier: number;
     selected = false;
 
-    constructor(type: AttributeTypes, value: number) {
+    constructor(type: Ability, value: number, selected?: boolean) {
         this.type = type;
         this.value = value;
         this.modifier = this.calculateModifier(value);
+        if(selected) { this.selected = selected };
     }
 
     calculateModifier(value: number) {
@@ -44,6 +45,8 @@ export class Attribute {
                 return 8;
             case (value < 30):
                 return 9;
+            case (value >= 30):
+                return 10;
         }
     }
 }

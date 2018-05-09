@@ -10,7 +10,7 @@ export enum Alignment {
     ChaoticNeutral = 'Chaotic Neutral',
     ChaoticEvil = 'Chaotic Evil'
 }
-export enum AttributeTypes {
+export enum Ability {
     Strength = 'Strength',
     Dexterity = 'Dexterity',
     Constitution = 'Constitution',
@@ -37,4 +37,11 @@ export enum Skills {
     SlightOfHand = 'Slight Of Hand',
     Stealth = 'Stealth',
     Survival = 'Survival'
+}
+export enum Currency {
+    Platinium = 'Platinium',
+    Gold = 'Gold',
+    Silver = 'Silver',
+    Electrum = 'Electrum',
+    Copper = 'Copper'
 }

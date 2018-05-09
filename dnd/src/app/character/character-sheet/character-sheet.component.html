@@ -6,11 +6,11 @@
   </div>
   <div class="row">
     <div class="col-2">
-      <app-stats [attributes]= "character.attributes"></app-stats>
+      <app-stats [abilities]= "character.abilities"></app-stats>
       <app-languages [languages]="character.languages"></app-languages>
     </div>
     <div class="col-3">
-      <app-saving-throws [savingThrows]="character.attributes"></app-saving-throws>
+      <app-saving-throws [savingThrows]="character.abilities"></app-saving-throws>
       <app-skills [skills]="character.skills"></app-skills>
     </div>
     <div class="col-3">
