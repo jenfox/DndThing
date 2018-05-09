@@ -10,7 +10,7 @@ export class GetSpellsService {
   constructor(private http: HttpClient) {}
 
   getWizardSpells() {
-    return this.http.get('http://dnd5eapi.co/api/spells/wizard/').subscribe(
+    return this.http.get(this.baseURL + 'spells/wizard/').subscribe(
       result => {
         console.log(result);
       },

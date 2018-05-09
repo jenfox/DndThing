@@ -1,7 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
-import {AppRoutingModule} from './app-routing.module';
+import {RouterModule, Routes} from '@angular/router';
 
 import {AppComponent} from './app.component';
 import {StatsComponent} from './character/character-sheet/stats/stats.component';
@@ -21,6 +21,21 @@ import {SpellSheetComponent} from './character/spell-sheet/spell-sheet.component
 import {SpellHeaderComponent} from './character/spell-sheet/spell-header/spell-header.component';
 import {CantripsComponent} from './character/spell-sheet/cantrips/cantrips.component';
 
+const appRoutes = [
+  {
+    path: '',
+    redirectTo: 'character',
+    pathMatch: 'full'
+  },
+  {
+    path: 'character',
+    component: CharacterSheetComponent
+  },
+  {
+    path: 'spell',
+    component: SpellSheetComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -42,7 +57,7 @@ import {CantripsComponent} from './character/spell-sheet/cantrips/cantrips.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot(appRoutes, {useHash: true}),
     HttpClientModule
   ],
   providers: [
