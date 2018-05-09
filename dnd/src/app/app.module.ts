@@ -2,6 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 import {RouterModule, Routes} from '@angular/router';
+import {NgxPopperModule} from 'ngx-popper';
 
 import {AppComponent} from './app.component';
 import {StatsComponent} from './character/character-sheet/stats/stats.component';
@@ -58,7 +59,8 @@ const appRoutes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, {useHash: true}),
-    HttpClientModule
+    HttpClientModule,
+    NgxPopperModule
   ],
   providers: [
     GetCharacterService,

@@ -2,8 +2,17 @@
 <div class="border">
 <p class="small">Equipment</p>
 <ul>
-  <li *ngFor="let equip of equipment">
+  <li *ngFor="let equip of equipment" 
+      [popper]="EquipPopperContent" 
+      [popperTrigger]="'click'">
     {{equip}}
+    <popper-content #EquipPopperContent>
+        <p class="bold">
+            {{equip}} 
+            <!-- change this to ping database instead -->
+        </p>
+    </popper-content>
   </li>
 </ul>
 </div>
+
