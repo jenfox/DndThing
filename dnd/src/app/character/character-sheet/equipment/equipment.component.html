@@ -4,7 +4,9 @@
 <ul>
   <li *ngFor="let equip of equipment" 
       [popper]="EquipPopperContent" 
-      [popperTrigger]="'click'">
+      [popperTrigger]="'click'"
+      [popperApplyClass]="'popperSpecialStyle'"
+      >
     {{equip}}
     <popper-content #EquipPopperContent>
         <p class="bold">
