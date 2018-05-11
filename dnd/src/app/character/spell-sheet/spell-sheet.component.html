@@ -2,9 +2,74 @@
 	<div class="row">
 		<app-spell-header></app-spell-header>
 	</div>
-	<div class="col-4">
-		<app-cantrips></app-cantrips>
+	<div class="row">
+		<div class="col-4 border">
+			<p>Cantrips</p>
+			<ul>
+				<li *ngFor="let cantrip of cantrips">{{cantrip.name}}</li>
+			</ul>
+		</div>
+		<div class="col-4 border">
+			<p>Level 3</p>
+			<ul>
+				<li *ngFor="let spell of level3">{{spell.name}}</li>
+			</ul>
+		</div>
+		<div class="col-4 border">
+			<p>Level 6</p>
+			<ul>
+				<li *ngFor="let spell of level6">{{spell.name}}</li>
+			</ul>
+		</div>
 	</div>
-	<div class="col-4"></div>
-	<div class="col-4"></div>
+	<div class="row">
+		<div class="col-4 border">
+			<p>Level 1</p>
+			<ul>
+				<li *ngFor="let spell of level1">{{spell.name}}</li>
+			</ul>
+		</div>
+		<div class="col-4 border">
+			<p>Level 4</p>
+			<ul>
+				<li *ngFor="let spell of level4">{{spell.name}}</li>
+			</ul>
+		</div>
+		<div class="col-4 border">
+			<p>Level 7</p>
+			<ul>
+				<li *ngFor="let spell of level7">{{spell.name}}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4 border">
+			<p>Level 2</p>
+			<ul>
+				<li *ngFor="let spell of level2">{{spell.name}}</li>
+			</ul>
+		</div>
+		<div class="col-4  border">
+			<p>Level 5</p>
+			<ul>
+				<li *ngFor="let spell of level5">{{spell.name}}</li>
+			</ul>
+		</div>
+		<div class="col-4  border">
+			<p>Level 8</p>
+			<ul>
+				<li *ngFor="let spell of level8">{{spell.name}}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-4"></div>
+		<div class="col-4"></div>
+		<div class="col-4  border">
+			<p>Level 9</p>
+			<ul>
+				<li *ngFor="let spell of level9">{{spell.name}}</li>
+			</ul>
+		</div>
+	</div>
 </div>

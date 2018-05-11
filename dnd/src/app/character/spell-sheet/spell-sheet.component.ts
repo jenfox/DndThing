@@ -8,10 +8,75 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpellSheetComponent implements OnInit {
 
-  constructor(private spells: GetSpellsService) { }
+  cantrips = new Array();
+  level1 = new Array();
+  level2 = new Array();
+  level3 = new Array();
+  level4 = new Array();
+  level5 = new Array();
+  level6 = new Array();
+  level7 = new Array();
+  level8 = new Array();
+  level9 = new Array();
+
+  parseSpells(className: string) {
+    this.getSpells.getClassSpells(className).subscribe(
+      results => {
+        for (let i = 0; i < results.count; i++) {
+          this.pushSingleSpell(results.results[i].url);
+        }
+      },
+      error => {
+        console.log('Can\'t get spells');
+      }
+    );
+  }
+
+  pushSingleSpell(spellURL: string) {
+    this.getSpells.getSingleSpell(spellURL).subscribe(
+      results => {
+        switch (results.level) {
+          case 1:
+            this.level1.push(results);
+            break;
+          case 2:
+            this.level2.push(results);
+            break;
+          case 3:
+            this.level3.push(results);
+            break;
+          case 4:
+            this.level4.push(results);
+            break;
+          case 5:
+            this.level5.push(results);
+            break;
+          case 6:
+            this.level6.push(results);
+            break;
+          case 7:
+            this.level7.push(results);
+            break;
+          case 8:
+            this.level8.push(results);
+            break;
+          case 9:
+            this.level9.push(results);
+            break;
+          default:
+            this.cantrips.push(results);
+        }
+      },
+      error => {
+        console.log('Can\t get single spell from ' + spellURL);
+      }
+    );
+  }
+
+  constructor(private getSpells: GetSpellsService) { }
 
   ngOnInit() {
-    this.spells.getWizardSpells();
+    this.parseSpells('wizard');
   }
 
 }
