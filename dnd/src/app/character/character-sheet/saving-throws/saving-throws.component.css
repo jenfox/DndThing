@@ -1,0 +1,27 @@
+.noTopPadding{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    /* padding-left: 10px; */
+}
+
+.nopadding{
+    padding:0 !important;
+}
+
+.bg{
+    background-image: url('../../../../assets/images/SavingThrowComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.transparent{
+    background: transparent;
+}
+
+.badge {
+    background-color: slateblue;
+}
+
+.nomargin{
+    margin: 0 !important;
+}

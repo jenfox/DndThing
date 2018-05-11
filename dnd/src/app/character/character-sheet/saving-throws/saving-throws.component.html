@@ -1,14 +1,27 @@
-<div class="border">
-  <h6>Saving Throws</h6>
-<ul class="list-group">
-    <li class="list-group-item"
+<div class="border bg">
+  <ul class="list-group">
+    <li class="list-group-item nopadding transparent"
       *ngFor = "let savingThrow of savingThrows">
-      <span
-      [ngClass]="{'badge badge-primary badge-pill': savingThrow.selected, small:true}">
-      <div></div>
-      {{savingThrow.type}}
-      +{{savingThrow.modifier}}
-    </span>
+      <div class='row'>
+        <div class='col-sm-1 nopadding'>
+            <input type="radio" name="proficiency{{savingThrow.type}}">
+        </div>
+        <div class='col-sm-1 nopadding'>
+            +{{savingThrow.modifier}}
+        </div>
+        <div class='col-sm-10 transparent'
+          [ngClass]="{'badge badge-primary badge-pill': savingThrow.selected, small:true}">
+          <!-- <div></div> -->
+          <!-- &ensp; +{{savingThrow.modifier}} &ensp; {{savingThrow.type}} -->
+          <!-- <div class='row'> -->
+            
+            <!-- <div class='col-sm-8'> -->
+              {{savingThrow.type}}
+            <!-- </div> -->
+          <!-- </div> -->
+          </div>
+      </div>
     </li>
   </ul>
+  <h6 style='text-align: center;'>Saving Throws</h6>
 </div>

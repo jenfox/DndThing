@@ -15,4 +15,10 @@ export class StatusComponent implements OnInit {
   ngOnInit() {
   }
 
+  changeHP(delta: number) {
+    if(this.character.currentHitPoints == this.character.hitPointMaximum && delta > 0){return;}
+    else if(this.character.currentHitPoints == 0 && delta < 0){return;}
+      this.character.currentHitPoints += delta;    
+  };
+
 }

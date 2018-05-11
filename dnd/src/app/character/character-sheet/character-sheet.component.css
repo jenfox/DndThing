@@ -1,0 +1,66 @@
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+}
+/* .rowBody{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  } */
+.colOne{
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+}
+.colTwo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.colThree{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.status{
+    flex-grow:1;
+}
+
+.attack{
+    flex-grow:3;
+}
+
+.equipment{
+    flex-grow:1;
+}
+
+/* .tableStats{
+    display: table;
+}
+*/
+.statCell{
+    height: 100%;
+} 
+
+.proficiencyBG{
+    background-image: url('../../../assets/images/ProficiencyBonusComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 5vh;
+}
+
+.inspirationBG{
+    background-image: url('../../../assets/images/inspirationComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.skillsBG{
+    background-image: url('../../../assets/images/SkillsComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

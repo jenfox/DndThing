@@ -1,13 +1,10 @@
-<div class="border">
-    <h6>Skills</h6>
+<div class="border skillsBG">
     <ul class="list-group">
-        <li class="list-group-item"
-        *ngFor = "let skill of skills">
-        <span
-        [ngClass]="{'badge badge-primary badge-pill': skill.selected, small: true}">
-        {{skill.type}}
-        +{{skill.value}}
+        <li class="list-group-item nopadding transparent" *ngFor = "let skill of skills">
+        <span [ngClass]="{'badge badge-primary badge-pill': skill.selected, small: true}">
+        &ensp; +{{skill.value}} &ensp; {{skill.type}}
         </span>
         </li>
     </ul>
+    <h6 style='text-align: center;'>Skills</h6>
 </div>

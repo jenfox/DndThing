@@ -1,12 +1,11 @@
-<div class="border">
-<div class="container">
-    <div class="row" *ngFor="let attr of abilities">
-      <div class="col-sm">
-        <h6>{{attr.type}}</h6>
-        {{attr.value}}
-        <br>
-        +{{attr.modifier}}
+<!-- <div class="border">
+<div class="container"> -->
+    <div class="row nopadding bg" *ngFor="let attr of abilities">
+      <div class="col-sm nopadding">
+        <div class='ablityType nopadding'>{{attr.type}}</div>
+        <p class='value nopadding'>{{attr.value}}</p>
+        <div class='modifier nopadding'>+{{attr.modifier}}</div>
       </div>
     </div>
-  </div>
-</div>
+  <!-- </div>
+</div> -->

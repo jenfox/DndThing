@@ -16,13 +16,16 @@
         </div>
         <div class="row border">
           <div class="col-sm border">
+              <input ng-model='character.currentHitPoints'>{{character.currentHitPoints}} / {{character.hitPointMaximum}}
+            <!-- <p class='nopadding'> Hit Points <br>
+            <button (click)='changeHP(1)'>+</button><button (click)='changeHP(-1)'>-</button>{{character.currentHitPoints}} / 
             {{character.hitPointMaximum}}
-            {{character.currentHitPoints}}
+            </p> -->
           </div>
         </div>
         <div class="row border">
           <div class="col-sm">
-            {{character.temporaryHitPoints}}
+            Temporary Hitpoints: {{character.temporaryHitPoints}}
           </div>
         </div>
         <div class="row">

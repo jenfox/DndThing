@@ -1,0 +1,16 @@
+.nopadding{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    /* padding-left: 10px; */
+}
+
+.skillsBG{
+    background-image: url('../../../../assets/images/SkillsComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.transparent{
+    background: transparent;
+    /* background-color: blue; */
+}

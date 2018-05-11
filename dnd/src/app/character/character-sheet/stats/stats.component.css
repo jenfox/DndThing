@@ -1,0 +1,59 @@
+
+.specPadding{
+    padding-top:18%;
+    padding-bottom: 15%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+   
+}
+
+.row{
+    height: 100%;
+}
+
+.bg{
+    background-image: url('../../../../assets/images/AbilityPortrait.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.nopadding{
+    padding: 0 !important;
+    margin: 0 !important;
+    text-align: center;
+    /* display:flex; */
+}
+.topMargin{
+    margin-top: 5%;
+
+}
+
+.ablityType{
+    /* font-size: 1vw; */
+    /* display: table-cell; */
+    font-weight: bold;
+    font-size: 85%;
+    /* display: inline; */
+    flex-grow:1;
+}
+
+.value{
+    /* display: table-cell; */
+    display: inline;
+    /* height: 100%; */
+    /* flex-grow:3; */
+    font-size: 200%;
+    vertical-align: top;
+}   
+
+.modifier{
+    /* display: table-cell; */
+    /* display: inline; */
+    vertical-align: top;
+    /* flex-grow:1; */
+}
