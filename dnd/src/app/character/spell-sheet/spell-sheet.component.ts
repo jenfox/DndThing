@@ -1,7 +1,5 @@
 import { GetSpellsService } from '../services/get-spells.service';
 import { Component, OnInit } from '@angular/core';
-import { GetCharacterService } from '../services/get-character.service';
-import { Character } from '../models/character';
 
 @Component({
   selector: 'app-spell-sheet',
@@ -84,8 +82,7 @@ export class SpellSheetComponent implements OnInit {
     }
   }
 
-  constructor(private getSpells: GetSpellsService) {
-  }
+  constructor(private getSpells: GetSpellsService) { }
 
   ngOnInit() {
     this.parseSpells('wizard');
