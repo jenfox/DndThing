@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { GetCharacterService } from '../services/get-character.service';
-import { Character } from '../models/character';
 import 'rxjs/add/operator/map';
 
 @Injectable()
