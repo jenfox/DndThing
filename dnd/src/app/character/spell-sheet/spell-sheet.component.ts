@@ -1,5 +1,6 @@
 import { GetSpellsService } from '../services/get-spells.service';
 import { Component, OnInit } from '@angular/core';
+import { removeSummaryDuplicates } from '@angular/compiler';
 
 @Component({
   selector: 'app-spell-sheet',
@@ -21,7 +22,7 @@ export class SpellSheetComponent implements OnInit {
 
   parseSpells(className: string) {
     this.getSpells.getClassSpells(className).subscribe(
-      results => {
+      (results: Results) => {
         for (let i = 0; i < results.count; i++) {
           this.pushSingleSpell(results.results[i].url);
         }
@@ -30,11 +31,16 @@ export class SpellSheetComponent implements OnInit {
         console.log('Can\'t get spells');
       }
     );
+
+    interface Results {
+      count?: number;
+      results?;
+    }
   }
 
   pushSingleSpell(spellURL: string) {
     this.getSpells.getSingleSpell(spellURL).subscribe(
-      results => {
+      (results: Results) => {
         switch (results.level) {
           case 1:
             this.level1.push(results);
@@ -71,6 +77,10 @@ export class SpellSheetComponent implements OnInit {
         console.log('Can\t get single spell from ' + spellURL);
       }
     );
+
+    interface Results {
+      level: number;
+    }
   }
 
   constructor(private getSpells: GetSpellsService) { }
