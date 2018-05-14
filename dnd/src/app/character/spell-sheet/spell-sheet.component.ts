@@ -1,6 +1,5 @@
 import { GetSpellsService } from '../services/get-spells.service';
 import { Component, OnInit } from '@angular/core';
-import { removeSummaryDuplicates } from '@angular/compiler';
 
 @Component({
   selector: 'app-spell-sheet',

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GetCharacterService } from '../../services/get-character.service';
+import { Character } from '../../models/character';
 
 @Component({
   selector: 'app-spell-header',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpellHeaderComponent implements OnInit {
 
-  constructor() { }
+  character: Character;
+
+  constructor(private characterService: GetCharacterService) {
+    this.character = this.characterService.makeCharacter();
+  }
 
   ngOnInit() {
   }
