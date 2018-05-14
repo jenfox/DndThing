@@ -25,3 +25,15 @@
 .nomargin{
     margin: 0 !important;
 }
+
+.width100{
+    width: 100%;
+}
+
+.prof10{
+    padding-left: 10px;
+}
+
+.prof5{
+    padding-left: 5px;
+}

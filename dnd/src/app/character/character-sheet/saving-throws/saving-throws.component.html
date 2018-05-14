@@ -2,14 +2,21 @@
   <ul class="list-group">
     <li class="list-group-item nopadding transparent"
       *ngFor = "let savingThrow of savingThrows">
-      <div class='row'>
-        <div class='col-sm-1 nopadding'>
-            <input type="radio" name="proficiency{{savingThrow.type}}">
+      <div class='row width100 nopadding nomargin' >
+        <div *ngIf='savingThrow.selected; else notProficientST' class='col-xs-1 prof10'>
+            <input type="checkbox" name="{{savingThrow.type}}" checked>
         </div>
-        <div class='col-sm-1 nopadding'>
+        <ng-template #notProficientST>
+          <div class='col-xs-1 prof10'>
+            <input type="checkbox" name="{{savingThrow.type}}">
+          </div>
+            
+        </ng-template>
+        
+        <div class='col-xs-1 prof5'>
             +{{savingThrow.modifier}}
         </div>
-        <div class='col-sm-10 transparent'
+        <div class='col-xs-10 transparent prof5'
           [ngClass]="{'badge badge-primary badge-pill': savingThrow.selected, small:true}">
           <!-- <div></div> -->
           <!-- &ensp; +{{savingThrow.modifier}} &ensp; {{savingThrow.type}} -->
