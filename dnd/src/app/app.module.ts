@@ -1,7 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
-import {RouterModule, Routes} from '@angular/router';
 
 import {AppComponent} from './app.component';
 import {StatsComponent} from './character/character-sheet/stats/stats.component';
@@ -19,23 +18,7 @@ import {GetCharacterService} from './character/services/get-character.service';
 import {GetSpellsService} from './character/services/get-spells.service';
 import {SpellSheetComponent} from './character/spell-sheet/spell-sheet.component';
 import {SpellHeaderComponent} from './character/spell-sheet/spell-header/spell-header.component';
-import {CantripsComponent} from './character/spell-sheet/cantrips/cantrips.component';
-
-const appRoutes = [
-  {
-    path: '',
-    redirectTo: 'character',
-    pathMatch: 'full'
-  },
-  {
-    path: 'character',
-    component: CharacterSheetComponent
-  },
-  {
-    path: 'spell',
-    component: SpellSheetComponent
-  }
-];
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -52,12 +35,11 @@ const appRoutes = [
     PersonalityComponent,
     InfoComponent,
     SpellSheetComponent,
-    SpellHeaderComponent,
-    CantripsComponent
+    SpellHeaderComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes, {useHash: true}),
+    AppRoutingModule,
     HttpClientModule
   ],
   providers: [
