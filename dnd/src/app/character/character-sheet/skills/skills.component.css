@@ -1,6 +1,9 @@
 .nopadding{
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    padding-left: 15px;
+    padding-right: 0 !important;
+    height: 20px;
     /* padding-left: 10px; */
 }
 
@@ -13,4 +16,20 @@
 .transparent{
     background: transparent;
     /* background-color: blue; */
+}
+
+.txtfontVal{
+    font-size: 80%;
+    position: relative;
+    top: -3px;
+}
+
+.txtfontType{
+    font-size: 60%;
+    position: relative;
+    top: -5px;
+}
+
+li{
+    border: none;
 }

@@ -58,3 +58,28 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+.langBG{
+    background-image: url('../../../assets/images/LanguageComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.equipmentBG{
+    background-image: url('../../../assets/images/EquipmentComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.attackBG{
+    background-image: url('../../../assets/images/AttackComponentBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.inspiration{
+    position: relative;
+    vertical-align: -webkit-baseline-middle;
+    padding-left: 20px;
+    zoom: 2.5;
+}

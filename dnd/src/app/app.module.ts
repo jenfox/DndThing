@@ -16,6 +16,7 @@ import { PersonalityComponent } from './character/character-sheet/personality/pe
 import { CharacterSheetComponent } from './character/character-sheet/character-sheet.component';
 import { InfoComponent } from './character/character-sheet/info/info.component';
 import { GetCharacterService } from './character/services/get-character.service';
+import { TestComponent } from './layout/test/test.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { GetCharacterService } from './character/services/get-character.service'
     AttacksComponent,
     StatusComponent,
     PersonalityComponent,
-    InfoComponent
+    InfoComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,

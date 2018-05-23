@@ -2,3 +2,33 @@
     padding: 0 !important;
     margin: 0 !important;
 }
+
+.acBG{
+    background-image: url('../../../../assets/images/ArmorClassBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.initBG{
+    background-image: url('../../../../assets/images/SpeedBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.speedBG{
+    background-image: url('../../../../assets/images/SpeedBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.currhpBG{
+    background-image: url('../../../../assets/images/CurrentHitPointsBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tempBG{
+    background-image: url('../../../../assets/images/TemporaryHitpointsBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

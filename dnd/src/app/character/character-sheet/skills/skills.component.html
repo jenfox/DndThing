@@ -1,9 +1,9 @@
-<div class="border skillsBG">
+<div class="skillsBG">
     <ul class="list-group">
         <li class="list-group-item nopadding transparent" *ngFor = "let skill of skills">
-        <span [ngClass]="{'badge badge-primary badge-pill': skill.selected, small: true}">
-        &ensp; +{{skill.value}} &ensp; {{skill.type}}
-        </span>
+            <input type='checkbox' class='col-xs-2' id="{{skill.type}}Checkbox">
+            <span class='col-xs-4 txtfontVal' id='{{skill.type}}Value'>+{{skill.value}}</span>
+            <span class='col-xs-6 txtfontType' id='{{skill.type}}' [ngClass]="{'badge badge-primary badge-pill': skill.selected, small: true}">{{skill.type}}</span>
         </li>
     </ul>
     <h6 style='text-align: center;'>Skills</h6>

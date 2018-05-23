@@ -2,32 +2,25 @@
   <ul class="list-group">
     <li class="list-group-item nopadding transparent"
       *ngFor = "let savingThrow of savingThrows">
-      <div class='row width100 nopadding nomargin' >
-        <div *ngIf='savingThrow.selected; else notProficientST' class='col-xs-1 prof10'>
+      <!-- <div class='row width100 nopadding nomargin' > -->
+        <span *ngIf='savingThrow.selected; else notProficientST' class='col-xs-1 prof10'>
             <input type="checkbox" name="{{savingThrow.type}}" checked>
-        </div>
+        </span>
         <ng-template #notProficientST>
-          <div class='col-xs-1 prof10'>
+          <span class='col-xs-1 prof10'>
             <input type="checkbox" name="{{savingThrow.type}}">
-          </div>
+          </span>
             
         </ng-template>
         
-        <div class='col-xs-1 prof5'>
+        <span class='col-xs-1 txtfont'>
             +{{savingThrow.modifier}}
-        </div>
-        <div class='col-xs-10 transparent prof5'
+        </span>
+        <span class='col-xs-10 transparent txtfont'
           [ngClass]="{'badge badge-primary badge-pill': savingThrow.selected, small:true}">
-          <!-- <div></div> -->
-          <!-- &ensp; +{{savingThrow.modifier}} &ensp; {{savingThrow.type}} -->
-          <!-- <div class='row'> -->
-            
-            <!-- <div class='col-sm-8'> -->
               {{savingThrow.type}}
-            <!-- </div> -->
-          <!-- </div> -->
-          </div>
-      </div>
+          </span>
+      <!-- </div> -->
     </li>
   </ul>
   <h6 style='text-align: center;'>Saving Throws</h6>

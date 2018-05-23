@@ -1,0 +1,15 @@
+.nameBG{
+    background-image: url('../../../../assets/images/CharacterNameBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.infoBG{
+    background-image: url('../../../../assets/images/CharacterInfoBackground.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.table{
+    background: transparent;
+}

@@ -1,0 +1,109 @@
+.layout {
+    background-image: url('../../../assets/images/layoutBackground.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+div{
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.maxH{
+    /* height: 100%; */
+    opacity: 0.6;
+}
+.hR1{
+    height: 71.5%;
+}
+.hR2{
+    height: 5%;
+}
+.hR3{
+    height: 23.5%;
+}
+.hRR1{
+    height: 8%;
+}
+.hRR2{
+    height: 8%;
+}
+.hRR3{
+    height: 24%;
+}
+.hRR4{
+    height: 60%;
+}
+.red{
+    background: red;
+}
+.red2{
+    background: blueviolet;
+    opacity: 1;
+}
+.red3{
+    background: maroon;
+    opacity: 1;
+}
+.red4{
+    background: plum;
+    opacity: 1;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.g1{
+    background: greenyellow;
+}
+.g2{
+    background: deeppink
+}
+.g3{
+    background: blue;
+}
+.hM1{
+    height: 10.5%;
+}
+.hM2{
+    height: 10.5%;
+}
+.hM3{
+    height: 8%;
+}
+.hM4{
+    height: 10%;
+}
+.hM5{
+    height: 32%;
+}
+.hM6{
+    height: 29%;
+}
+.hGold{
+    height: 20%;
+}
+.hB1{
+    height:13%;
+}
+.hB2{
+    height:8%;
+}
+.hB3{
+    height:8%;
+}
+.hB4{
+    height:10%;
+}
+.hB5{
+    height:61%;
+}
+.b1{
+    background: coral;
+}
+.b2{
+    background: chartreuse;
+}
